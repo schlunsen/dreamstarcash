@@ -1,0 +1,14 @@
+*.swp
+*.orig
+*.swo
+*.pyc
+.DS_Store
+*.*un~
+
+app/node_modules
+app/frontend/app
+
+
+*.log
+*.sql
+.idea/
