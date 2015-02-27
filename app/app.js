@@ -7,14 +7,12 @@ app.get('/', function(req, res){
     res.sendfile('frontend/index.html');
 });
 
-
-
 app.use('/static', express.static(__dirname + '/frontend'));
 
-
-
 io.on('connection', function(socket){
-    console.log('a user connected');
+    io.on('chat message', function(msg){
+        io.emit('chat message', msg);
+    });
 });
 
 http.listen(3001, function(){
