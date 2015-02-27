@@ -10,8 +10,16 @@ app.get('/', function(req, res){
 app.use('/static', express.static(__dirname + '/frontend'));
 
 io.on('connection', function(socket){
-    io.on('chat message', function(msg){
-        io.emit('chat message', msg);
+    console.log("Client connected");
+
+    socket.on('chat-message', function(msg){
+        console.log("Chat message", msg);
+        io.emit('chat-message', msg);
+    });
+
+    socket.on('chat-typing', function(data){
+        console.log("Chat typing", data);
+        io.emit('chat-typing', data);
     });
 });
 
