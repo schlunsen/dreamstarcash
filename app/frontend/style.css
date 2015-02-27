@@ -1,0 +1,97 @@
+/* General */
+body {
+    font-family: "Roboto";
+}
+
+/* Helpers */
+.hidden {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+ul.list-nostyle {
+    padding: 0px;
+}
+
+ul.list-nostyle li {
+    list-style: none;
+}
+
+.container {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* App */
+
+#app-login .login-box {
+    width: 450px;
+    margin: 0 auto;
+    background: #dad0c1;
+    border: 1px solid #eee;
+    padding: 0px 20px 20px 20px;
+    margin-top: 20px;
+}
+
+input.form-control {
+    height: 20px;
+    padding: 4px;
+    display: block;
+
+    margin: 20px 0;
+}
+
+button.form-control {
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    display: block;
+}
+
+#app-login .login-box input {
+    width: 100%;
+    //width: 438px;
+
+}
+
+#app-login .login-box button {
+    width: 100%;
+
+}
+
+#app-chatroom .controls input {
+    width: 100%;
+}
+
+.chat .user {
+    color: green;
+}
+
+.chat .message {
+    color: grey;
+}
+
